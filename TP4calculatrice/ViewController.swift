@@ -47,6 +47,8 @@ class ViewController: UIViewController {
     let a2 = myStack.getElementWith(shift: 1)?.doubleValue
     if a1 != nil && a2 != nil
     {
+      myStack.pop()
+      myStack.pop()
       myStack.push(aNumber: NSNumber(value: a1!*a2!))
     }
     displayStack()
