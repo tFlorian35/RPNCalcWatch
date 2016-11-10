@@ -32,9 +32,13 @@ class ViewController: UIViewController {
   
   @IBAction func clickPoint(sender: AnyObject){
     print("clickPoint")
+    if(myInputDisplayLabel.text == ""){
+        myInputDisplayLabel.text?.append("0.")
+        hasPoint = true
+    }
     if !hasPoint {
-      myInputDisplayLabel.text = "\(myInputDisplayLabel.text!)."
-      hasPoint = true
+        myInputDisplayLabel.text = "\(myInputDisplayLabel.text!)."
+        hasPoint = true
     }
   }
   @IBAction func clickMul(sender: AnyObject){
