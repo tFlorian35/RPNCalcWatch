@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     let val2 = myStack.getElementWith(shift: 1)!.doubleValue
     myStack.pop()
     myStack.pop()
-    myStack.push(aNumber: NSNumber(value: val1-val2))
+    myStack.push(aNumber: NSNumber(value: val2-val1))
     displayStack()
   }
   @IBAction func clickAdd(sender: AnyObject){
