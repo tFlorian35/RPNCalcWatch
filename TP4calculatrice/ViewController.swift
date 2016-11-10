@@ -60,6 +60,12 @@ class ViewController: UIViewController {
   }
   @IBAction func clickMinus(sender: AnyObject){
        print("clickMinus")
+    let val1 = myStack.getElementWith(shift: 0)!.doubleValue
+    let val2 = myStack.getElementWith(shift: 1)!.doubleValue
+    myStack.pop()
+    myStack.pop()
+    myStack.push(aNumber: NSNumber(value: val1-val2))
+    displayStack()
   }
   @IBAction func clickAdd(sender: AnyObject){
        print("clickADd")
