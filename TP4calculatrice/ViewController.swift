@@ -19,8 +19,6 @@ class ViewController: UIViewController {
   
   
   
-  
-  
   @IBOutlet var myLabelStack1: UILabel!
   @IBOutlet var myLabelStack2: UILabel!
   @IBOutlet var myLabelStack3: UILabel!
@@ -107,6 +105,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    displayStack()
     // Do any additional setup after loading the view, typically from a nib.
   }
 
