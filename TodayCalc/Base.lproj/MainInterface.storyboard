@@ -100,85 +100,130 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="epO-2U-rlp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="meO-GS-eXD">
                                 <rect key="frame" x="65.5" y="322.5" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Z3u-ez-D3v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bjw-wv-da8">
                                 <rect key="frame" x="65.5" y="271" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="yx8-7N-Ic3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rpi-32-2cv">
                                 <rect key="frame" x="163.5" y="271" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="RNh-I7-4kX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JMB-Gh-GyP">
                                 <rect key="frame" x="257.5" y="271" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="rx1-da-4HZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CZA-hj-stA">
                                 <rect key="frame" x="65.5" y="217.5" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="fdv-EN-Jus"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GUV-T0-aDv">
                                 <rect key="frame" x="163.5" y="217.5" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="sBG-Rt-tku"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qgv-SV-Bi5">
                                 <rect key="frame" x="257.5" y="217.5" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="cGV-oJ-971"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WlV-eY-fGI">
                                 <rect key="frame" x="257.5" y="322.5" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="tnv-hQ-6ci"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rwi-iv-asc">
                                 <rect key="frame" x="163.5" y="374" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="clickPointWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="N9r-sW-uAj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YQh-Vb-ccm">
                                 <rect key="frame" x="257.5" y="374" width="55" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="drop"/>
+                                <connections>
+                                    <action selector="clickDropWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="w4y-2z-2js"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B7G-dc-egx">
                                 <rect key="frame" x="70" y="182" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="clickEnterWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hMG-Ea-efv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zPV-Vs-jNy">
                                 <rect key="frame" x="373.5" y="330" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="*"/>
+                                <connections>
+                                    <action selector="clickMulWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="yk0-D7-1sX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gh2-bK-rih">
                                 <rect key="frame" x="373.5" y="281.5" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="clickAddWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="nsw-lh-bxM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S2f-5d-a5s">
                                 <rect key="frame" x="373.5" y="382" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="clickDivWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Sux-9a-6md"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" id="J91-6J-80d">
                                 <rect key="frame" x="0.0" y="130" width="480" height="48"/>
@@ -201,16 +246,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81599647890000004" green="0.80064492220000005" blue="0.81676136359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="clickDigitWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="BmE-O1-p7U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nJF-Fs-rSa">
                                 <rect key="frame" x="373.5" y="223" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="clickMinusWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="znd-Ds-4ud"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="11A-rp-UDr">
                                 <rect key="frame" x="146" y="182" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Frac"/>
+                                <connections>
+                                    <action selector="clickFracWithSender:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="3jZ-f0-bbg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -222,6 +276,14 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="480" height="420"/>
+                    <connections>
+                        <outlet property="myInputDisplayLabel" destination="mll-zz-Wd6" id="mEE-9B-gQ4"/>
+                        <outlet property="myLabelStack1" destination="Kxw-C9-ZDL" id="dLd-tD-ZNh"/>
+                        <outlet property="myLabelStack2" destination="KUK-Cv-2lT" id="5cT-dU-hiP"/>
+                        <outlet property="myLabelStack3" destination="Il2-zy-JNW" id="ROS-BX-ffA"/>
+                        <outlet property="myLabelStack4" destination="cB1-qM-fj2" id="hUD-H3-Qzj"/>
+                        <outlet property="myLabelStack5" destination="OWD-vZ-nZe" id="LV8-SZ-ilv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

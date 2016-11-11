@@ -17,7 +17,7 @@ class ViewController: UIViewController {
   @IBOutlet var myInputDisplayLabel: UILabel!
 
   
-  @IBAction func clickFrac(_ sender: Any) {
+  @IBAction func clickFrac(sender: AnyObject) {
     if myStack.nbElements() > 1
     {
   
