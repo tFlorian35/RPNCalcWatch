@@ -20,9 +20,9 @@ class ViewController: UIViewController {
   @IBAction func clickFrac(_ sender: Any) {
     if myStack.nbElements() > 1
     {
-    
+  
       let f = Fraction(aNumerateur: 2, aDenominateur: 3)
-      
+  
       myStack.push(aNumber: f as! StackRPNCompatible)
       displayStack()
     }
@@ -75,31 +75,30 @@ class ViewController: UIViewController {
       let val1 = myStack.pop()!.doubleValue
       let val2 = myStack.pop()!.doubleValue
       myStack.push(aNumber: NSNumber(value: val2/val1))
-    }
+  }
     displayStack()
     
 
   }
   @IBAction func clickMinus(sender: AnyObject){
-    print("clickMinus")
-    if myStack.nbElements() > 1
-    {
-      let val1 = myStack.pop()!.doubleValue
-      let val2 = myStack.pop()!.doubleValue
-      myStack.push(aNumber: NSNumber(value: val2-val1))
-    }
+       print("clickMinus")
+    let val1 = myStack.pop()!.doubleValue
+    let val2 = myStack.pop()!.doubleValue
+    myStack.push(aNumber: NSNumber(value: val2-val1))
+    displayStack()
+  }
     displayStack()
 
   }
   @IBAction func clickAdd(sender: AnyObject){
-    print("clickADd")
+       print("clickADd")
     if myStack.nbElements() > 1
     {
       let val1 = myStack.pop()!.doubleValue
       let val2 = myStack.pop()!.doubleValue
       myStack.push(aNumber: NSNumber(value: val2-val1))
     }
-    displayStack()
+       displayStack()
   }
   
   @IBAction func clickDrop(sender: AnyObject){
