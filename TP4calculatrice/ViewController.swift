@@ -87,9 +87,9 @@ class ViewController: UIViewController {
     myStack.push(aNumber: NSNumber(value: val2-val1))
     displayStack()
   }
-    displayStack()
 
-  }
+  
+  
   @IBAction func clickAdd(sender: AnyObject){
        print("clickADd")
     if myStack.nbElements() > 1
