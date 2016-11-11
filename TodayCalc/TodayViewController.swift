@@ -50,14 +50,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   @IBAction func clickFrac(sender: AnyObject) {
     if myStack.nbElements() > 1
     {
-      
-     let f = Fraction(aNumerateur: 2, aDenominateur: 3)
-      
-      myStack.push(aNumber: f as StackRPNCompatible)
-      displayStack()
+      if myStack.getElementWith(shift: 0) is NSNumber &&
+        myStack.getElementWith(shift: 1) is NSNumber {
+        let val1 = myStack.pop()!
+        let val2 = myStack.pop()!
+        let f = Fraction(aNumerateur: (val2 as! NSNumber).intValue , aDenominateur: (val1 as! NSNumber).intValue)
+        myStack.push(aNumber: f as StackRPNCompatible)
+        displayStack()
+      }
     }
-    
-    
   }
   
   @IBOutlet var myLabelStack1: UILabel!
@@ -133,7 +134,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   
   @IBAction func clickDrop(sender: AnyObject){
     print("clickDrop")
-    myStack.pop()
+    _ = myStack.pop()
     displayStack()
     
   }
@@ -141,8 +142,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   @IBAction func clickEnter(sender: AnyObject){
     print("clickEnter")
     let formatter = NumberFormatter()
-    myStack.push(aNumber: formatter.number(from: myInputDisplayLabel.text!)!)
-    displayStack()
+    if let n = formatter.number(from: myInputDisplayLabel.text!)
+      {
+        myStack.push(aNumber: n)
+        displayStack()
+      }
     myInputDisplayLabel.text=""
   }
   
