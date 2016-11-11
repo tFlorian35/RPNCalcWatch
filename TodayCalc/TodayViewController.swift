@@ -10,28 +10,29 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
-      self.extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
-    }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view from its nib.
+    self.extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
+    // Perform any setup necessary in order to update the view.
     
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
-        completionHandler(NCUpdateResult.newData)
-    }
-
+    // If an error is encountered, use NCUpdateResult.Failed
+    // If there's no update required, use NCUpdateResult.NoData
+    // If there's an update, use NCUpdateResult.NewData
+    
+    completionHandler(NCUpdateResult.newData)
+  }
+  
   func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
     if (activeDisplayMode == NCWidgetDisplayMode.compact) {
       self.preferredContentSize = maxSize
@@ -40,7 +41,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
       self.preferredContentSize = CGSize(width: maxSize.width, height: 400)
     }
   }
-
+  
   
   
   
@@ -143,10 +144,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     print("clickEnter")
     let formatter = NumberFormatter()
     if let n = formatter.number(from: myInputDisplayLabel.text!)
-      {
-        myStack.push(aNumber: n)
-        displayStack()
-      }
+    {
+      myStack.push(aNumber: n)
+      displayStack()
+    }
     myInputDisplayLabel.text=""
   }
   
@@ -171,7 +172,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
       i = i + 1
     }
   }
-
+  
   
   
 }
