@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3784861DD5C4C7004FE13A /* StackRPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB47F2A1DCB497800C0C35D /* StackRPN.swift */; };
+		CD3784871DD5C4C7004FE13A /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF7DFC1DD4CD2400EFDF30 /* Fraction.swift */; };
 		CDAF7DED1DD4C0A000EFDF30 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAF7DEC1DD4C0A000EFDF30 /* NotificationCenter.framework */; };
 		CDAF7DF01DD4C0A000EFDF30 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF7DEF1DD4C0A000EFDF30 /* TodayViewController.swift */; };
 		CDAF7DF31DD4C0A000EFDF30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF7DF11DD4C0A000EFDF30 /* MainInterface.storyboard */; };
@@ -236,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3784861DD5C4C7004FE13A /* StackRPN.swift in Sources */,
+				CD3784871DD5C4C7004FE13A /* Fraction.swift in Sources */,
 				CDAF7DF01DD4C0A000EFDF30 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +448,7 @@
 				CDAF7DFA1DD4C0A000EFDF30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDFEF2161DCA9DC3000CC7D8 /* Build configuration list for PBXProject "TP4calculatrice" */ = {
 			isa = XCConfigurationList;
