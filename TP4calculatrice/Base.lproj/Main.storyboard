@@ -206,7 +206,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLe-1K-4sT">
-                                <rect key="frame" x="248.5" y="463.5" width="30" height="30"/>
+                                <rect key="frame" x="248" y="463" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="*"/>
                                 <connections>
@@ -214,7 +214,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-rb-JBN">
-                                <rect key="frame" x="248.5" y="410" width="30" height="30"/>
+                                <rect key="frame" x="248" y="410" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
@@ -222,7 +222,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-42-vKe">
-                                <rect key="frame" x="248.5" y="513" width="30" height="30"/>
+                                <rect key="frame" x="248" y="513" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="/"/>
                                 <connections>
@@ -260,6 +260,14 @@
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="clickMinusWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjO-FB-oJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-Kx-K2M">
+                                <rect key="frame" x="119" y="302" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Frac"/>
+                                <connections>
+                                    <action selector="clickFrac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9f-fz-5wZ"/>
                                 </connections>
                             </button>
                         </subviews>

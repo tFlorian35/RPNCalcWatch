@@ -7,20 +7,34 @@
 //
 
 import Foundation
+
+protocol StackRPNCompatible {
+  var doubleValue: Double {get}
+  var stringValue: String {get}
+}
+
+extension NSNumber: StackRPNCompatible{
+  
+}
+
 class StackRPN {
 
   
   
+  func nbElements()-> Int
+  {
+    return myArray.count
+  }
   
   
   
-  var myArray = [NSNumber]()
-  func push(aNumber: NSNumber)
+  var myArray = [StackRPNCompatible]()
+  func push(aNumber: StackRPNCompatible)
   {
     myArray.insert (aNumber, at: myArray.count )
   }
   
-  func pop() -> NSNumber?
+  func pop() -> StackRPNCompatible?
   {
     if myArray.count==0
     {
@@ -35,7 +49,7 @@ class StackRPN {
     myArray.removeAll()
   }
   
-  func getElementWith(shift: Int) -> NSNumber?
+  func getElementWith(shift: Int) -> StackRPNCompatible?
   {
     if myArray.count-shift-1 >= 0
     {
