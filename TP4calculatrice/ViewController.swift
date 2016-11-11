@@ -17,7 +17,18 @@ class ViewController: UIViewController {
   @IBOutlet var myInputDisplayLabel: UILabel!
 
   
+  @IBAction func clickFrac(_ sender: Any) {
+    if myStack.nbElements() > 1
+    {
   
+      let f = Fraction(aNumerateur: 2, aDenominateur: 3)
+  
+      myStack.push(aNumber: f as! StackRPNCompatible)
+      displayStack()
+    }
+
+    
+  }
   
   @IBOutlet var myLabelStack1: UILabel!
   @IBOutlet var myLabelStack2: UILabel!
@@ -42,16 +53,15 @@ class ViewController: UIViewController {
     }
   }
   @IBAction func clickMul(sender: AnyObject){
-    print("clickMul")
-    let a1 = myStack.getElementWith(shift: 0)?.doubleValue
-    let a2 = myStack.getElementWith(shift: 1)?.doubleValue
-    if a1 != nil && a2 != nil
+    print("clickMinus")
+    if myStack.nbElements() > 1
     {
-      myStack.pop()
-      myStack.pop()
-      myStack.push(aNumber: NSNumber(value: a1!*a2!))
+      let val1 = myStack.pop()!.doubleValue
+      let val2 = myStack.pop()!.doubleValue
+      myStack.push(aNumber: NSNumber(value: val2*val1))
     }
     displayStack()
+    
   }
   
   
@@ -59,23 +69,35 @@ class ViewController: UIViewController {
   
   @IBAction func clickDiv(sender: AnyObject){
        print("clickDiv")
+    print("clickMinus")
+    if myStack.nbElements() > 1
+    {
+      let val1 = myStack.pop()!.doubleValue
+      let val2 = myStack.pop()!.doubleValue
+      myStack.push(aNumber: NSNumber(value: val2/val1))
+  }
+    displayStack()
+    
+
   }
   @IBAction func clickMinus(sender: AnyObject){
        print("clickMinus")
-    let val1 = myStack.getElementWith(shift: 0)!.doubleValue
-    let val2 = myStack.getElementWith(shift: 1)!.doubleValue
-    myStack.pop()
-    myStack.pop()
+    let val1 = myStack.pop()!.doubleValue
+    let val2 = myStack.pop()!.doubleValue
     myStack.push(aNumber: NSNumber(value: val2-val1))
     displayStack()
   }
+    displayStack()
+
+  }
   @IBAction func clickAdd(sender: AnyObject){
        print("clickADd")
-       let val1 = myStack.getElementWith(shift: 0)!.doubleValue
-       let val2 = myStack.getElementWith(shift: 1)!.doubleValue
-       myStack.pop()
-       myStack.pop()
-       myStack.push(aNumber: NSNumber(value: val1+val2))
+    if myStack.nbElements() > 1
+    {
+      let val1 = myStack.pop()!.doubleValue
+      let val2 = myStack.pop()!.doubleValue
+      myStack.push(aNumber: NSNumber(value: val2-val1))
+    }
        displayStack()
   }
   
@@ -106,8 +128,9 @@ class ViewController: UIViewController {
     let tabLab = [myLabelStack1,myLabelStack2, myLabelStack3, myLabelStack4, myLabelStack5]
     var i = 0
     for label in  tabLab {
+
       if let content = myStack.getElementWith(shift: i) {
-        label?.text = "\(content)"
+        label?.text = "\(content.stringValue)"
       }else{
         label?.text = "----"
       }

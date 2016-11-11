@@ -264,6 +264,14 @@
                                     <action selector="clickMinusWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjO-FB-oJ1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-Kx-K2M">
+                                <rect key="frame" x="119" y="302" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Frac"/>
+                                <connections>
+                                    <action selector="clickFrac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9f-fz-5wZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

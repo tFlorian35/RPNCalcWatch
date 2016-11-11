@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDAF7DED1DD4C0A000EFDF30 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAF7DEC1DD4C0A000EFDF30 /* NotificationCenter.framework */; };
+		CDAF7DF01DD4C0A000EFDF30 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF7DEF1DD4C0A000EFDF30 /* TodayViewController.swift */; };
+		CDAF7DF31DD4C0A000EFDF30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF7DF11DD4C0A000EFDF30 /* MainInterface.storyboard */; };
+		CDAF7DF71DD4C0A000EFDF30 /* TodayCalc.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CDAF7DEA1DD4C0A000EFDF30 /* TodayCalc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CDAF7DFD1DD4CD2400EFDF30 /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF7DFC1DD4CD2400EFDF30 /* Fraction.swift */; };
 		CDB47F2B1DCB497800C0C35D /* StackRPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB47F2A1DCB497800C0C35D /* StackRPN.swift */; };
 		CDFEF21F1DCA9DC4000CC7D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEF21E1DCA9DC4000CC7D8 /* AppDelegate.swift */; };
 		CDFEF2211DCA9DC4000CC7D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEF2201DCA9DC4000CC7D8 /* ViewController.swift */; };
@@ -15,7 +20,37 @@
 		CDFEF2291DCA9DC4000CC7D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFEF2271DCA9DC4000CC7D8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CDAF7DF51DD4C0A000EFDF30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFEF2131DCA9DC3000CC7D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDAF7DE91DD4C0A000EFDF30;
+			remoteInfo = TodayCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDAF7DFB1DD4C0A000EFDF30 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CDAF7DF71DD4C0A000EFDF30 /* TodayCalc.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CDAF7DEA1DD4C0A000EFDF30 /* TodayCalc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayCalc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAF7DEC1DD4C0A000EFDF30 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CDAF7DEF1DD4C0A000EFDF30 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CDAF7DF21DD4C0A000EFDF30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CDAF7DF41DD4C0A000EFDF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDAF7DFC1DD4CD2400EFDF30 /* Fraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
 		CDB47F2A1DCB497800C0C35D /* StackRPN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRPN.swift; sourceTree = "<group>"; };
 		CDFEF21B1DCA9DC4000CC7D8 /* TP4calculatrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TP4calculatrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFEF21E1DCA9DC4000CC7D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +62,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CDAF7DE71DD4C0A000EFDF30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAF7DED1DD4C0A000EFDF30 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDFEF2181DCA9DC3000CC7D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDAF7DEB1DD4C0A000EFDF30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDAF7DEC1DD4C0A000EFDF30 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDAF7DEE1DD4C0A000EFDF30 /* TodayCalc */ = {
+			isa = PBXGroup;
+			children = (
+				CDAF7DEF1DD4C0A000EFDF30 /* TodayViewController.swift */,
+				CDAF7DF11DD4C0A000EFDF30 /* MainInterface.storyboard */,
+				CDAF7DF41DD4C0A000EFDF30 /* Info.plist */,
+			);
+			path = TodayCalc;
+			sourceTree = "<group>";
+		};
 		CDFEF2121DCA9DC3000CC7D8 = {
 			isa = PBXGroup;
 			children = (
 				CDFEF21D1DCA9DC4000CC7D8 /* TP4calculatrice */,
+				CDAF7DEE1DD4C0A000EFDF30 /* TodayCalc */,
+				CDAF7DEB1DD4C0A000EFDF30 /* Frameworks */,
 				CDFEF21C1DCA9DC4000CC7D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				CDFEF21B1DCA9DC4000CC7D8 /* TP4calculatrice.app */,
+				CDAF7DEA1DD4C0A000EFDF30 /* TodayCalc.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +127,7 @@
 				CDFEF2271DCA9DC4000CC7D8 /* LaunchScreen.storyboard */,
 				CDFEF22A1DCA9DC4000CC7D8 /* Info.plist */,
 				CDB47F2A1DCB497800C0C35D /* StackRPN.swift */,
+				CDAF7DFC1DD4CD2400EFDF30 /* Fraction.swift */,
 			);
 			path = TP4calculatrice;
 			sourceTree = "<group>";
@@ -70,6 +135,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CDAF7DE91DD4C0A000EFDF30 /* TodayCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDAF7DF81DD4C0A000EFDF30 /* Build configuration list for PBXNativeTarget "TodayCalc" */;
+			buildPhases = (
+				CDAF7DE61DD4C0A000EFDF30 /* Sources */,
+				CDAF7DE71DD4C0A000EFDF30 /* Frameworks */,
+				CDAF7DE81DD4C0A000EFDF30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayCalc;
+			productName = TodayCalc;
+			productReference = CDAF7DEA1DD4C0A000EFDF30 /* TodayCalc.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CDFEF21A1DCA9DC3000CC7D8 /* TP4calculatrice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDFEF22D1DCA9DC4000CC7D8 /* Build configuration list for PBXNativeTarget "TP4calculatrice" */;
@@ -77,10 +159,12 @@
 				CDFEF2171DCA9DC3000CC7D8 /* Sources */,
 				CDFEF2181DCA9DC3000CC7D8 /* Frameworks */,
 				CDFEF2191DCA9DC3000CC7D8 /* Resources */,
+				CDAF7DFB1DD4C0A000EFDF30 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDAF7DF61DD4C0A000EFDF30 /* PBXTargetDependency */,
 			);
 			name = TP4calculatrice;
 			productName = TP4calculatrice;
@@ -97,6 +181,10 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = lpi2m;
 				TargetAttributes = {
+					CDAF7DE91DD4C0A000EFDF30 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					CDFEF21A1DCA9DC3000CC7D8 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -117,11 +205,20 @@
 			projectRoot = "";
 			targets = (
 				CDFEF21A1DCA9DC3000CC7D8 /* TP4calculatrice */,
+				CDAF7DE91DD4C0A000EFDF30 /* TodayCalc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CDAF7DE81DD4C0A000EFDF30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAF7DF31DD4C0A000EFDF30 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDFEF2191DCA9DC3000CC7D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +232,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CDAF7DE61DD4C0A000EFDF30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAF7DF01DD4C0A000EFDF30 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDFEF2171DCA9DC3000CC7D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,12 +247,29 @@
 				CDB47F2B1DCB497800C0C35D /* StackRPN.swift in Sources */,
 				CDFEF2211DCA9DC4000CC7D8 /* ViewController.swift in Sources */,
 				CDFEF21F1DCA9DC4000CC7D8 /* AppDelegate.swift in Sources */,
+				CDAF7DFD1DD4CD2400EFDF30 /* Fraction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CDAF7DF61DD4C0A000EFDF30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDAF7DE91DD4C0A000EFDF30 /* TodayCalc */;
+			targetProxy = CDAF7DF51DD4C0A000EFDF30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		CDAF7DF11DD4C0A000EFDF30 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDAF7DF21DD4C0A000EFDF30 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		CDFEF2221DCA9DC4000CC7D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -167,6 +289,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CDAF7DF91DD4C0A000EFDF30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lpi2m.TP4calculatrice.TodayCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CDAF7DFA1DD4C0A000EFDF30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lpi2m.TP4calculatrice.TodayCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		CDFEF22B1DCA9DC4000CC7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -263,6 +409,7 @@
 		CDFEF22E1DCA9DC4000CC7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TP4calculatrice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -276,6 +423,7 @@
 		CDFEF22F1DCA9DC4000CC7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TP4calculatrice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -289,6 +437,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CDAF7DF81DD4C0A000EFDF30 /* Build configuration list for PBXNativeTarget "TodayCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAF7DF91DD4C0A000EFDF30 /* Debug */,
+				CDAF7DFA1DD4C0A000EFDF30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CDFEF2161DCA9DC3000CC7D8 /* Build configuration list for PBXProject "TP4calculatrice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
