@@ -11,9 +11,7 @@ import Foundation
 
 
 class ViewController: UIViewController {
-  
-  
-  
+ 
   @IBOutlet var myInputDisplayLabel: UILabel!
   
   
@@ -53,15 +51,17 @@ class ViewController: UIViewController {
       hasPoint = true
     }
   }
-  @IBAction func clickMul(sender: AnyObject){
-    print("clickMinus")
-    if myStack.nbElements() > 1
-    {
+  
+    
+    @IBAction func clickMul(sender: AnyObject){
+    print("Multiplication")
+    if myStack.nbElements() > 1 {
       let val1 = myStack.pop()!.doubleValue
       let val2 = myStack.pop()!.doubleValue
       myStack.push(aNumber: NSNumber(value: val2*val1))
     }
     displayStack()
+    
     
   }
   
@@ -97,9 +97,16 @@ class ViewController: UIViewController {
     {
       let val1 = myStack.pop()!.doubleValue
       let val2 = myStack.pop()!.doubleValue
-      myStack.push(aNumber: NSNumber(value: val2-val1))
+      myStack.push(aNumber: NSNumber(value: val2+val1))
     }
     displayStack()
+    //Envoyer a la montre
+    
+    let lastResult = myLabelStack1
+    let shareWithWatch = UserDefaults(suiteName:"group.lpi2m.TP4calculatrice")
+    shareWithWatch?.set(lastResult, forKey:"myKey")
+    shareWithWatch?.synchronize()
+
   }
   
   @IBAction func clickDrop(sender: AnyObject){
@@ -117,7 +124,12 @@ class ViewController: UIViewController {
       myStack.push(aNumber: n)
       displayStack()
     }
+   
     myInputDisplayLabel.text=""
+    
+    
+    
+    
   }
   
   @IBAction func clickDigit(sender: AnyObject){
@@ -127,8 +139,7 @@ class ViewController: UIViewController {
   }
   
   
-  func displayStack()
-  {
+  func displayStack(){
     let tabLab = [myLabelStack1,myLabelStack2, myLabelStack3, myLabelStack4, myLabelStack5]
     var i = 0
     for label in  tabLab {
@@ -140,7 +151,18 @@ class ViewController: UIViewController {
       }
       i = i + 1
     }
+    
   }
+    
+    func sendToWatch(){
+        //Envoyer a la montre
+        let lastResult = myLabelStack1.text
+        let shareWithWatch = UserDefaults(suiteName:"group.lpi2m.TP4calculatrice")
+        shareWithWatch?.set(lastResult, forKey:"myKey")
+        shareWithWatch?.synchronize()
+        print(lastResult!)
+
+    }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -155,4 +177,6 @@ class ViewController: UIViewController {
   
   
 }
+
+
 

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17EC49411DDDA04D0072807A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EC493F1DDDA04D0072807A /* Interface.storyboard */; };
+		17EC49431DDDA04D0072807A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EC49421DDDA04D0072807A /* Assets.xcassets */; };
+		17EC494A1DDDA04E0072807A /* Watch Calc Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17EC49491DDDA04E0072807A /* Watch Calc Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17EC49511DDDA04E0072807A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EC49501DDDA04E0072807A /* InterfaceController.swift */; };
+		17EC49531DDDA04E0072807A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EC49521DDDA04E0072807A /* ExtensionDelegate.swift */; };
+		17EC49551DDDA04E0072807A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EC49541DDDA04E0072807A /* NotificationController.swift */; };
+		17EC49571DDDA04E0072807A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EC49561DDDA04E0072807A /* Assets.xcassets */; };
+		17EC495B1DDDA04E0072807A /* Watch Calc.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17EC493D1DDDA04D0072807A /* Watch Calc.app */; };
 		CD3784861DD5C4C7004FE13A /* StackRPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB47F2A1DCB497800C0C35D /* StackRPN.swift */; };
 		CD3784871DD5C4C7004FE13A /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF7DFC1DD4CD2400EFDF30 /* Fraction.swift */; };
 		CDAF7DED1DD4C0A000EFDF30 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAF7DEC1DD4C0A000EFDF30 /* NotificationCenter.framework */; };
@@ -23,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		17EC494B1DDDA04E0072807A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFEF2131DCA9DC3000CC7D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17EC49481DDDA04E0072807A;
+			remoteInfo = "Watch Calc Extension";
+		};
+		17EC49591DDDA04E0072807A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFEF2131DCA9DC3000CC7D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17EC493C1DDDA04D0072807A;
+			remoteInfo = "Watch Calc";
+		};
 		CDAF7DF51DD4C0A000EFDF30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDFEF2131DCA9DC3000CC7D8 /* Project object */;
@@ -33,6 +55,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		17EC49611DDDA04E0072807A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				17EC494A1DDDA04E0072807A /* Watch Calc Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EC49631DDDA04E0072807A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				17EC495B1DDDA04E0072807A /* Watch Calc.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDAF7DFB1DD4C0A000EFDF30 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +91,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17EC493D1DDDA04D0072807A /* Watch Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EC49401DDDA04D0072807A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		17EC49421DDDA04D0072807A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17EC49441DDDA04D0072807A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17EC49491DDDA04E0072807A /* Watch Calc Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Calc Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EC494F1DDDA04E0072807A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		17EC49501DDDA04E0072807A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		17EC49521DDDA04E0072807A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		17EC49541DDDA04E0072807A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		17EC49561DDDA04E0072807A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17EC49581DDDA04E0072807A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17EC49651DDDB75B0072807A /* TP4calculatrice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TP4calculatrice.entitlements; sourceTree = "<group>"; };
+		17EC49661DDDB82F0072807A /* Watch Calc Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch Calc Extension.entitlements"; sourceTree = "<group>"; };
+		17EC49671DDDBA270072807A /* Watch Calc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch Calc.entitlements"; sourceTree = "<group>"; };
 		CDAF7DEA1DD4C0A000EFDF30 /* TodayCalc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayCalc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF7DEC1DD4C0A000EFDF30 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		CDAF7DEF1DD4C0A000EFDF30 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +122,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		17EC49461DDDA04E0072807A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDAF7DE71DD4C0A000EFDF30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +147,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17EC493E1DDDA04D0072807A /* Watch Calc */ = {
+			isa = PBXGroup;
+			children = (
+				17EC49671DDDBA270072807A /* Watch Calc.entitlements */,
+				17EC493F1DDDA04D0072807A /* Interface.storyboard */,
+				17EC49421DDDA04D0072807A /* Assets.xcassets */,
+				17EC49441DDDA04D0072807A /* Info.plist */,
+			);
+			path = "Watch Calc";
+			sourceTree = "<group>";
+		};
+		17EC494D1DDDA04E0072807A /* Watch Calc Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17EC49661DDDB82F0072807A /* Watch Calc Extension.entitlements */,
+				17EC49501DDDA04E0072807A /* InterfaceController.swift */,
+				17EC49521DDDA04E0072807A /* ExtensionDelegate.swift */,
+				17EC49541DDDA04E0072807A /* NotificationController.swift */,
+				17EC49561DDDA04E0072807A /* Assets.xcassets */,
+				17EC49581DDDA04E0072807A /* Info.plist */,
+				17EC494E1DDDA04E0072807A /* Supporting Files */,
+			);
+			path = "Watch Calc Extension";
+			sourceTree = "<group>";
+		};
+		17EC494E1DDDA04E0072807A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17EC494F1DDDA04E0072807A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CDAF7DEB1DD4C0A000EFDF30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +203,8 @@
 			children = (
 				CDFEF21D1DCA9DC4000CC7D8 /* TP4calculatrice */,
 				CDAF7DEE1DD4C0A000EFDF30 /* TodayCalc */,
+				17EC493E1DDDA04D0072807A /* Watch Calc */,
+				17EC494D1DDDA04E0072807A /* Watch Calc Extension */,
 				CDAF7DEB1DD4C0A000EFDF30 /* Frameworks */,
 				CDFEF21C1DCA9DC4000CC7D8 /* Products */,
 			);
@@ -115,6 +215,8 @@
 			children = (
 				CDFEF21B1DCA9DC4000CC7D8 /* TP4calculatrice.app */,
 				CDAF7DEA1DD4C0A000EFDF30 /* TodayCalc.appex */,
+				17EC493D1DDDA04D0072807A /* Watch Calc.app */,
+				17EC49491DDDA04E0072807A /* Watch Calc Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +224,7 @@
 		CDFEF21D1DCA9DC4000CC7D8 /* TP4calculatrice */ = {
 			isa = PBXGroup;
 			children = (
+				17EC49651DDDB75B0072807A /* TP4calculatrice.entitlements */,
 				CDFEF21E1DCA9DC4000CC7D8 /* AppDelegate.swift */,
 				CDFEF2201DCA9DC4000CC7D8 /* ViewController.swift */,
 				CDFEF2221DCA9DC4000CC7D8 /* Main.storyboard */,
@@ -137,6 +240,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		17EC493C1DDDA04D0072807A /* Watch Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17EC49621DDDA04E0072807A /* Build configuration list for PBXNativeTarget "Watch Calc" */;
+			buildPhases = (
+				17EC493B1DDDA04D0072807A /* Resources */,
+				17EC49611DDDA04E0072807A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17EC494C1DDDA04E0072807A /* PBXTargetDependency */,
+			);
+			name = "Watch Calc";
+			productName = "Watch Calc";
+			productReference = 17EC493D1DDDA04D0072807A /* Watch Calc.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		17EC49481DDDA04E0072807A /* Watch Calc Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17EC49601DDDA04E0072807A /* Build configuration list for PBXNativeTarget "Watch Calc Extension" */;
+			buildPhases = (
+				17EC49451DDDA04E0072807A /* Sources */,
+				17EC49461DDDA04E0072807A /* Frameworks */,
+				17EC49471DDDA04E0072807A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Calc Extension";
+			productName = "Watch Calc Extension";
+			productReference = 17EC49491DDDA04E0072807A /* Watch Calc Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		CDAF7DE91DD4C0A000EFDF30 /* TodayCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDAF7DF81DD4C0A000EFDF30 /* Build configuration list for PBXNativeTarget "TodayCalc" */;
@@ -162,11 +299,13 @@
 				CDFEF2181DCA9DC3000CC7D8 /* Frameworks */,
 				CDFEF2191DCA9DC3000CC7D8 /* Resources */,
 				CDAF7DFB1DD4C0A000EFDF30 /* Embed App Extensions */,
+				17EC49631DDDA04E0072807A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CDAF7DF61DD4C0A000EFDF30 /* PBXTargetDependency */,
+				17EC495A1DDDA04E0072807A /* PBXTargetDependency */,
 			);
 			name = TP4calculatrice;
 			productName = TP4calculatrice;
@@ -183,13 +322,42 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = lpi2m;
 				TargetAttributes = {
+					17EC493C1DDDA04D0072807A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PXMLLM85C7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					17EC49481DDDA04E0072807A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PXMLLM85C7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					CDAF7DE91DD4C0A000EFDF30 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 					CDFEF21A1DCA9DC3000CC7D8 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PXMLLM85C7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -208,11 +376,30 @@
 			targets = (
 				CDFEF21A1DCA9DC3000CC7D8 /* TP4calculatrice */,
 				CDAF7DE91DD4C0A000EFDF30 /* TodayCalc */,
+				17EC493C1DDDA04D0072807A /* Watch Calc */,
+				17EC49481DDDA04E0072807A /* Watch Calc Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		17EC493B1DDDA04D0072807A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EC49431DDDA04D0072807A /* Assets.xcassets in Resources */,
+				17EC49411DDDA04D0072807A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EC49471DDDA04E0072807A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EC49571DDDA04E0072807A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDAF7DE81DD4C0A000EFDF30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +421,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		17EC49451DDDA04E0072807A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EC49551DDDA04E0072807A /* NotificationController.swift in Sources */,
+				17EC49531DDDA04E0072807A /* ExtensionDelegate.swift in Sources */,
+				17EC49511DDDA04E0072807A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDAF7DE61DD4C0A000EFDF30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +455,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		17EC494C1DDDA04E0072807A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17EC49481DDDA04E0072807A /* Watch Calc Extension */;
+			targetProxy = 17EC494B1DDDA04E0072807A /* PBXContainerItemProxy */;
+		};
+		17EC495A1DDDA04E0072807A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17EC493C1DDDA04D0072807A /* Watch Calc */;
+			targetProxy = 17EC49591DDDA04E0072807A /* PBXContainerItemProxy */;
+		};
 		CDAF7DF61DD4C0A000EFDF30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CDAF7DE91DD4C0A000EFDF30 /* TodayCalc */;
@@ -266,6 +473,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		17EC493F1DDDA04D0072807A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17EC49401DDDA04D0072807A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		CDAF7DF11DD4C0A000EFDF30 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,6 +508,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		17EC495C1DDDA04E0072807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Watch Calc/Watch Calc.entitlements";
+				DEVELOPMENT_TEAM = PXMLLM85C7;
+				IBSC_MODULE = Watch_Calc_Extension;
+				INFOPLIST_FILE = "Watch Calc/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = lpi2m.TP4calculatrice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		17EC495D1DDDA04E0072807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Watch Calc/Watch Calc.entitlements";
+				DEVELOPMENT_TEAM = PXMLLM85C7;
+				IBSC_MODULE = Watch_Calc_Extension;
+				INFOPLIST_FILE = "Watch Calc/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = lpi2m.TP4calculatrice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		17EC495E1DDDA04E0072807A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Watch Calc Extension/Watch Calc Extension.entitlements";
+				DEVELOPMENT_TEAM = PXMLLM85C7;
+				INFOPLIST_FILE = "Watch Calc Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lpi2m.TP4calculatrice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		17EC495F1DDDA04E0072807A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Watch Calc Extension/Watch Calc Extension.entitlements";
+				DEVELOPMENT_TEAM = PXMLLM85C7;
+				INFOPLIST_FILE = "Watch Calc Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lpi2m.TP4calculatrice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		CDAF7DF91DD4C0A000EFDF30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +704,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TP4calculatrice/TP4calculatrice.entitlements;
+				DEVELOPMENT_TEAM = PXMLLM85C7;
 				INFOPLIST_FILE = TP4calculatrice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -429,6 +720,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TP4calculatrice/TP4calculatrice.entitlements;
+				DEVELOPMENT_TEAM = PXMLLM85C7;
 				INFOPLIST_FILE = TP4calculatrice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,6 +734,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17EC49601DDDA04E0072807A /* Build configuration list for PBXNativeTarget "Watch Calc Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17EC495E1DDDA04E0072807A /* Debug */,
+				17EC495F1DDDA04E0072807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17EC49621DDDA04E0072807A /* Build configuration list for PBXNativeTarget "Watch Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17EC495C1DDDA04E0072807A /* Debug */,
+				17EC495D1DDDA04E0072807A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CDAF7DF81DD4C0A000EFDF30 /* Build configuration list for PBXNativeTarget "TodayCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
